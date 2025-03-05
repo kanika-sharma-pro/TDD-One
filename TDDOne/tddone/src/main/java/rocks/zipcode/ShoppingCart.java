@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
-    private List<Item> items;
-    private double taxRate;
+    private final List<Item> items;
+    private final double taxRate;
     
     public ShoppingCart(double taxRate) {
         this.items = new ArrayList<>();
@@ -52,8 +52,8 @@ public class ShoppingCart {
     }
     
     public static class Item {
-        private String name;
-        private double price;
+        private final String name;
+        private final double price;
         private int quantity;
         
         public Item(String name, double price, int quantity) {

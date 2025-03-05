@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 // The test class (already written)
 
 public class CalculatorTest {
-    private Calculator calculator = new Calculator();
+    private final Calculator calculator = new Calculator();
     
     @Test
     void testAdd() {

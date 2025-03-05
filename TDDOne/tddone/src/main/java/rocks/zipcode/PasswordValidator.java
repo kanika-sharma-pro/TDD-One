@@ -39,11 +39,7 @@ public class PasswordValidator {
         }
         
         // Check for at least one special character
-        if (!containsSpecialChar(password)) {
-            return false;
-        }
-        
-        return true;
+        return containsSpecialChar(password);
     }
     
     private boolean containsUppercase(String password) {
