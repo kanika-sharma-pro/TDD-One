@@ -47,6 +47,7 @@ These exercises include fully implemented classes. Students need to write compre
      - Character type requirements (uppercase, lowercase, digit, special character)
      - Null/empty handling
 
+### Ignore this one. Do not bother to try to solve it. (3/5/2025 KY)
 6. **EmailService Exercise**
    - Test an email service with:
      - Welcome email functionality

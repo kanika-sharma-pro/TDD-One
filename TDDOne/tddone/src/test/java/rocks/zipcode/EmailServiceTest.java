@@ -6,6 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 // Write this test class using a mock for EmailSender
 
 public class EmailServiceTest {
+
+    /**
+     * IGNORE THIS ONE. DON'T BOTHER.
+     */
     // TODO: Write tests for the EmailService class using Mockito to mock EmailSender
     // Your tests should:
     // - Verify that emails are sent correctly with proper parameters
