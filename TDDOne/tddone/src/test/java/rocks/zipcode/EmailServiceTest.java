@@ -2,7 +2,6 @@ package rocks.zipcode;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 // Write this test class using a mock for EmailSender
 
