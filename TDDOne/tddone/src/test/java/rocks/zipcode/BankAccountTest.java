@@ -20,7 +20,7 @@ class BankAccountTest {
     }
     
     @Test
-    void testDeposit() {
+    void testDeposit() throws IllegalAccessException {
         account.deposit(100.0);
         assertEquals(100.0, account.getBalance());
         
@@ -42,14 +42,14 @@ class BankAccountTest {
     }
     
     @Test
-    void testWithdraw() {
+    void testWithdraw() throws IllegalAccessException {
         account.deposit(100.0);
         account.withdraw(40.0);
         assertEquals(60.0, account.getBalance());
     }
     
     @Test
-    void testWithdrawInsufficientFunds() {
+    void testWithdrawInsufficientFunds() throws IllegalAccessException {
         account.deposit(100.0);
         
         Exception exception = assertThrows(IllegalStateException.class, () -> {
@@ -64,7 +64,7 @@ class BankAccountTest {
     }
     
     @Test
-    void testWithdrawNegativeAmount() {
+    void testWithdrawNegativeAmount() throws IllegalAccessException {
         account.deposit(100.0);
         
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {

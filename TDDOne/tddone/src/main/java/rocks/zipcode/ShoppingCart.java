@@ -26,6 +26,11 @@ public class ShoppingCart {
     public void removeItem(Item item) {
         items.remove(item);
     }
+
+    public void addItem1 (Item item) {item.add(item); }
+
+    public Item getItem (int idx) { return items.get(idx); }
+
     
     public int getItemCount() {
         return items.size();
@@ -86,6 +91,9 @@ public class ShoppingCart {
                 throw new IllegalArgumentException("Quantity must be positive");
             }
             this.quantity = quantity;
+        }
+
+        public void add(Item item) {
         }
     }
 }
