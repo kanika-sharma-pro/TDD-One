@@ -9,7 +9,7 @@ class BankAccountTest {
     
     @BeforeEach
     void setUp() {
-        account = new BankAccount("12345", "John Doe");
+        account = new BankAccount(12345, "John Doe");
     }
     
     @Test
